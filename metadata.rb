@@ -1,6 +1,6 @@
 name             'pi-dnetc'
-maintainer       'YOUR_COMPANY_NAME'
-maintainer_email 'YOUR_EMAIL'
+maintainer       'Andreas Fritzler'
+maintainer_email 'andreas.fritzler@gmail.com'
 license          'All rights reserved'
 description      'Installs/Configures pi-dnetc'
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))

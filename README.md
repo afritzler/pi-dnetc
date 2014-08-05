@@ -1,23 +1,14 @@
 pi-dnetc Cookbook
 =================
-TODO: Enter the cookbook description here.
-
-e.g.
-This cookbook makes your favorite breakfast sandwich.
+Intalls the [distributed.net](http://distributed.net) client on your Raspberry Pi.
 
 Requirements
 ------------
-TODO: List your cookbook requirements. Be sure to include any requirements this cookbook has on platforms, libraries, other cookbooks, packages, operating systems, etc.
-
-e.g.
-#### packages
-- `toaster` - pi-dnetc needs toaster to brown your bagel.
+Raspberry Pi :-)
 
 Attributes
 ----------
-TODO: List your cookbook attributes here.
 
-e.g.
 #### pi-dnetc::default
 <table>
   <tr>
@@ -27,9 +18,15 @@ e.g.
     <th>Default</th>
   </tr>
   <tr>
-    <td><tt>['pi-dnetc']['bacon']</tt></td>
+    <td><tt>['pi-dnetc']['OGR-28']</tt></td>
     <td>Boolean</td>
-    <td>whether to include bacon</td>
+    <td>whether to run OGR or not</td>
+    <td><tt>true</tt></td>
+  </tr>
+  <tr>
+    <td><tt>['pi-dnetc']['RC-72']</tt></td>
+    <td>Boolean</td>
+    <td>whether to run OGR or not</td>
     <td><tt>true</tt></td>
   </tr>
 </table>
@@ -37,7 +34,6 @@ e.g.
 Usage
 -----
 #### pi-dnetc::default
-TODO: Write usage instructions for each cookbook.
 
 e.g.
 Just include `pi-dnetc` in your node's `run_list`:
@@ -65,4 +61,4 @@ e.g.
 
 License and Authors
 -------------------
-Authors: TODO: List authors
+Authors: Andreas Fritzler
