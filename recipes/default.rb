@@ -12,6 +12,14 @@ remote_file "#{node['dnetc_cache_dir']}/#{node['dnetc_pgk']}" do
   source node["dnetc_url"]
 end
 
+# Create install directory
+directory mode['dnetc_install_dir'] do
+  owner "root"
+  group "root"
+  mode 00644
+  action :create
+end
+
 # Unzip the packge
 bash "untar the downloaded packege" do
   user "root"
