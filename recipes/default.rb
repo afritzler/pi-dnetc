@@ -13,5 +13,21 @@ remote_file "#{node['dnetc_cache_dir']}/#{node['dnetc_pgk']}" do
 end
 
 # Unzip the packge
+bash "untar the downloaded packege" do
+  user "root"
+  cwd node['dnetc_install_dir']
+  code <<-EOH
+  tar -zxf #{node['dnetc_cache_dir']}/#{node['dnetc_pgk']}
+  EOH
+end
 
-# Write the configuration file
+# Link executable to bin folder
+
+# Clean up
+bash "clean up downloaded files" do
+  user "root"
+  cwd node['dnetc_install_dir']
+  code <<-EOH
+  rm #{node['dnetc_cache_dir']}/#{node['dnetc_pgk']}
+  EOH
+end
