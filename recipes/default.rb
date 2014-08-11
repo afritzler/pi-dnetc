@@ -30,6 +30,13 @@ bash "untar the downloaded packege" do
 end
 
 # Link executable to bin folder
+bash "create symlink in bin folder" do
+  user "root"
+  cwd node['dnetc_install_dir']
+  code <<-EOH
+  ln -s #{node['dnetc_install_dir']}/dnetc /usr/local/bin/dnetc
+  EOH
+end
 
 # Clean up
 bash "clean up downloaded files" do
