@@ -4,3 +4,4 @@ default["dnetc_url"] = "http://http.distributed.net/pub/dcti/current-client/dnet
 default["dnetc_pgk"] = "dnetc-linux-arm-eabi.tar.gz"
 default["dnetc_cache_dir"] = "/tmp"
 default["dnetc_install_dir"] = "/usr/local/dnetc"
+default["dnetc_symlink"] = "/usr/local/bin/dnetc"
