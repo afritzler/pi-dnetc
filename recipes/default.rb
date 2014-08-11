@@ -13,7 +13,7 @@ remote_file "#{node['dnetc_cache_dir']}/#{node['dnetc_pgk']}" do
 end
 
 # Create install directory
-directory mode['dnetc_install_dir'] do
+directory node['dnetc_install_dir'] do
   owner "root"
   group "root"
   mode 00644
