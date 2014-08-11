@@ -35,7 +35,7 @@ if !File.exist?(node['dnetc_symlink'])
     user "root"
     cwd node['dnetc_install_dir']
     code <<-EOH
-    ln -s #{node['dnetc_install_dir']}/dnetc #{node['dnetc_symlink']}
+    ln -s #{node['dnetc_install_dir']}/#{node['dnetc_pgk']}/dnetc #{node['dnetc_symlink']}
     EOH
   end
 end
