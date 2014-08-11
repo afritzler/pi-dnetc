@@ -62,3 +62,5 @@ e.g.
 License and Authors
 -------------------
 Authors: Andreas Fritzler
+
+Released under the [Apache License](/LICENSE)
