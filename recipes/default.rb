@@ -15,7 +15,7 @@ end
 # Create install directory
 directory node['dnetc_install_dir'] do
   owner "root"
-  group "root"
+  group "staff"
   mode 00644
   action :create
 end
